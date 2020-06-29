@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  // &:hover {
+  //   transition: all 0.4s ease-in-out;
+  // }
+}
+
+.main {
+  position: relative;
+  display: grid;
+  .container{
+    padding: 0 5%;
+  }
+}

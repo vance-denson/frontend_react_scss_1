@@ -1,0 +1,26 @@
+.heroContainer{
+    background-image: url("./../../assets/landing-hero.png");
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    img{
+        border-radius: 50% 50%;
+        width: 50%;
+        margin: 5%;
+        box-shadow: 0 0 .25rem .25rem rgba(0, 0, 0, 0.2);
+        justify-self: left;
+    }
+}
+
+@media (max-width:500px){
+    .aboutHero{
+        h4{
+            font-size: .8rem;
+        }
+    }
+}
+
+// .aboutHero{
+//     width: 85vw
+// }

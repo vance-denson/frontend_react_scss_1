@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    z-index: 2;
+    position: fixed;
+    padding: 1rem 0 0 0;
+    right: 1rem;
+    img{
+        width: 5vw;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        padding: 0 0 10% 0;
+        &:hover{
+            width: 6vw;
+        }
+    }
+}
