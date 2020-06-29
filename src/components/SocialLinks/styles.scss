@@ -1,4 +1,4 @@
-.container{
+.socialLinks{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -16,4 +16,31 @@
             width: 6vw;
         }
     }
+}
+
+@media (max-width:"500px"){
+        .socialContainer{
+            position: relative;
+            .socialLinks{
+                display: grid;
+                grid-template-columns: 20% auto auto auto 20%;
+                bottom: 0;
+                width: 100%;
+                justify-items: center;
+                img{
+                    height: 15vh;
+                    width: 10vw;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:nth-child(1){
+                    grid-column: 2/3;
+                    }
+                    &:hover{
+                        width: 15vw;
+                        border-top: 1px solid rgba(0,0,0,0.8);
+                        padding-top: .5rem;
+                    }
+                }
+            }
+        }
 }

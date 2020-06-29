@@ -12,11 +12,50 @@
         justify-self: left;
     }
 }
+.aboutContainer{
+    height:100vh;
+    .aboutContent{
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        h3{
+            grid-column: 1/3;
+            line-height: 5rem;
+        }
+        h4{
+            grid-column: 1/3;
+        }
+        .aboutContact, .aboutPromo{
+            justify-self: center;
+            text-align: center;
+            border: 1px solid black;
+            margin: 5% 0 0 0;
+            padding: 5% 5%;
+            background-color: rgba(53,167,193,0.6);
+        }
+        .aboutContact{
+            background-color: rgba(53,167,193,0.6);
+            a{
+                padding: 0 5%;
+            }
+        }
+        .aboutPromo{
+            width: 70%;
+        }
+    }
+}
 
 @media (max-width:500px){
     .aboutHero{
         h4{
             font-size: .8rem;
+        }
+    }
+    .aboutContainer{
+        .aboutContent{
+        display: flex;
+        flex-direction: column;
         }
     }
 }
